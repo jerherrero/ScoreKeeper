@@ -10,16 +10,11 @@ import XCTest
 class StressTests: XCTestCase {
     
     // On MacBookPro, 2019, 2.4 GHz 8-Core Intel Core i9, 32 GB 2667 MHz DDR4
-    // Ran tests continuously for tens of minutes to ensure thermal plateaued and stayed consistent
-    
-    // When thermals have plateaued, and Xcode is cleaned and then immediately runns all Unit Tests:
+    // Ran tests continuously for tens of minutes to ensure thermals plateaued and stayed consistent
+    // When thermals have plateaued, and Xcode is cleaned and then immediately runs all Unit Tests
     // Each test in this class takes approx 10.0 seconds
     // Entire test class takes an average of 594.4395 seconds (9.9 minutes or 9:54 minutes)
     // Actual Xcode log is commented at the bottom of this file
-    
-    // Above times are round on the above hardware by design
-    // by fine tuning stressTestIterations and the tests inside of executeStressTest()
-    // Test logs attached to the bottom of this file
     
     let stressTestIterations = 10700000
     
